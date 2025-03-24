@@ -14,7 +14,7 @@ function App() {
     setGeneratedText('Fetching your data...');
     try {
       const response = await axios({
-        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDjCyTRAz29GPkwoBDBYaEDq2oEWJjkzes',
+        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_GOOGLE_API_KEY',
         method: 'post',
         data: {
           contents: [
