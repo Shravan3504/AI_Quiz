@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Quiz</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <script type="module" src="/src/main.jsx"></script> -->
+    <!-- <button id="startButton">Start</button> -->
+     <a href="#" id="startButton">cources</a>
+    <!-- <script type="module" src="/src/main.jsx"></script> -->
+    <script>
+      document.getElementById('startButton').addEventListener('click', function() {
+        console.log('Script started!');
+        this.style.display = 'none';
+        import('/src/main.jsx').then(module => {
+          console.log('Module loaded:', module);
+        }).catch(err => {
+          console.error('Failed to load module:', err);
+        });
+      });
+    </script>
+
+  </body>
+</html>
